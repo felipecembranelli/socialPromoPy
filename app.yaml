@@ -1,0 +1,31 @@
+application: atlantean-force-90113
+version: 2
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /rest/.*
+  script: main.app
+
+- url: (.*)/
+  static_files: app\1/index_2.html
+  upload: app
+
+- url: (.*)
+  static_files: app\1
+  upload: app
+
+- url: /css
+  static_dir: app/css/bootstrap
+
+- url: /css/img
+  static_dir: app/css/img
+
+
+libraries:
+- name: MySQLdb
+  version: "latest"
+
+- name: ssl
+  version: "latest"

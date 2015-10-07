@@ -1,0 +1,65 @@
+<div id="page-wrapper">
+    <div class="container-fluid">
+      <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    Dashboard
+                </h1>
+                <ol class="breadcrumb">
+                    <li>
+                        <i class="fa fa-dashboard"></i>  <a href="/">Dashboard</a>
+                    </li>
+                    <li class="active">
+                        <i class="fa fa-bar-chart-o"></i> Overview
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <!-- /.row -->
+
+         <!--<div class="row">-->
+            <!--<div class="col-lg-12">-->
+                <!--<div class="panel panel-primary">-->
+                    <!--<div class="panel-heading">-->
+                        <!--<h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Line Graph Example with Tooltips</h3>-->
+                    <!--</div>-->
+                    <!--<div class="panel-body">-->
+                        <!--<div class="flot-chart">-->
+                            <!--<div class="flot-chart-content" id="chartdiv"></div>-->
+                            <!--<button ng-click="ChartBack()"><<</button>-->
+                            <!--<button ng-click="ChartForward()">>></button>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!-- /.row -->
+
+        <!--{{campaigns}}-->
+
+        <!--<div ng-repeat="ca in campaigns">-->
+            <!--<b>campaign {{ ca.name}}  - {{ca.status}}</b>-->
+        <!--</div>-->
+
+       <div class="row">
+
+                    <div ng-repeat="ca in campaigns">
+                        <div class="col-sm-3">
+                        <div class="panel panel-red">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i><a ng-click="viewDetail(ca.campaignId)">  Campaign {{ca.name}}</a></h3>
+                            </div>
+                            <div class="panel-body">
+                                <p><b>Hashtags:</b> {{ca.hashTags}}</p>
+                                <p><b>Status:</b> {{ca.status}}</p>
+                                <p><b>Created At:</b> {{ca.createAt}}</p>
+                                <p><b># Tweets:</b> {{ca.totalTweets}}</p>
+                                <p><b># Replies:</b> {{ca.totalReplies}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
