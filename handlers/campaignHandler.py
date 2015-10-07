@@ -49,23 +49,6 @@ class campaignQueryHandler(webapp2.RequestHandler):
     self.response.write(json.dumps(r))
 
 class campaignCreateHandler(webapp2.RequestHandler):
-  # def get(self):
-  #   logging.getLogger().setLevel(logging.DEBUG)
-  #
-  #   logging.info('Create campaign')
-
-    #self.SaveToDataStore("C1","1","1","Active","1","1","Twitter 1","#teste")
-    #self.SaveToDataStore("C2","1","1","Active","1","1","Twitter 2","#teste")
-    #self.SaveToDataStore("C3","1","1","Active","1","1","Twitter 3","#teste")
-    #self.SaveToDataStore("C4","1","1","Active","1","1","Twitter 4","#teste")
-
-    #self.SaveToDataStore("C5","1","1","Inactive","1","1","Twitter 2","#TenhoQueMandarUmFodaSePara")
-    #self.SaveToDataStore("C6","1","1","Inactive","1","1","Twitter 3","#teste")
-    #self.SaveToDataStore("C7","1","1","Inactive","1","1","Twitter 4","#teste")
-    #self.SaveToDataStore("C8","1","1","Inactive","1","1","Twitter 4","#teste")
-
-    #logging.info('Finished')
-
   def get(self):
     logging.getLogger().setLevel(logging.DEBUG)
 
